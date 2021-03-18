@@ -28,3 +28,16 @@ show dbs  //this will show use all the databases in mongo
 >use nameOfDataBase
 
 >show collections
+
+
+=====================================================================
+express notes
+=====================================================================
+//Query and Route parameters
+//we can use this to dynamically set json from out route input. 
+app.get('/params/:name/:location/:occupation', (req, res, next) =>{
+    const params = req.params
+    res.json({
+        params: params
+    })
+})

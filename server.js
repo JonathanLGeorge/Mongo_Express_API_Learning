@@ -30,8 +30,7 @@ app.use("/cities", cities);
 app.use("/countries", countries);
 //////////////////////////////////////////////////////////////////////////////
 
-/*
-this is all code that we put into routes to clean up server js. im leaving it hear just for notes and learning
+//this is all code that we put into routes to clean up server js. im leaving it hear just for notes and learning
 //go to http://localhost:5000/
 app.get("/", (req, res, next) => {
   res.json({
@@ -39,7 +38,7 @@ app.get("/", (req, res, next) => {
     data: "This is the Mongo project data",
   });
 });
-
+/*
 //got to http://localhost:5000/cities
 app.get("/cities", (req, res, next) => {
   City.find(null)
