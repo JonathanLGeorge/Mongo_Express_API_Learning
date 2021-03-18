@@ -1,0 +1,30 @@
+our mongo bin file path 
+>C:\Program Files\MongoDB\Server\4.4\bin>
+
+to run mongoDB while in out bin sub directory 
+>mongod
+
+make sure you see that we are waiting for connections on port 27017
+
+
+
+///////////
+imports //these are done inside windows cmd, not mongo CLI
+//////////
+monogoimport --db nameYouWantDataBase --collection nameYourcollection --file nameOfTheFileYouAreUsing.json
+
+example:
+mongoimport --db world --collecion countries --file countries.json
+
+
+
+
+
+to play with data in our collecion go into mongo CLI
+>mongo
+
+show dbs  //this will show use all the databases in mongo
+
+>use nameOfDataBase
+
+>show collections
